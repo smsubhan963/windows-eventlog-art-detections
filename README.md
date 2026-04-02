@@ -72,3 +72,35 @@ Some tests were blocked by Microsoft Defender during execution, so lab-only excl
 - Detection coverage table
 - Event Viewer proof examples
 - Resume-ready project summary
+
+## Evidence Screenshots
+
+### Test #6 - PowerShell MsXml COM Object
+
+**Execution proof**
+
+![Test 6 PowerShell](./Test%20%236%20PowerShell.png)
+
+**Log proof**
+
+![Test 6 Log Proof](./Log%20Proof%20Test%20%236.png)
+
+---
+
+### Test #10 - PowerShell Fileless Script Execution
+
+**Execution proof**
+
+![Test 10 PowerShell](./Test%20%2310%20PowerShell.png)
+
+**Log proof**
+
+![Test 10 Log Proof](./Test%20%2310.png)
+
+---
+
+### Test #18 - Invoke Known Malicious Cmdlets
+
+**PowerShell 4104 proof**
+
+![Test 18 4104 Proof](./Test%20%2318%20.png) 
