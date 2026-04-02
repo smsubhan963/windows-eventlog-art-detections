@@ -66,12 +66,16 @@ All successful tests were run under **MITRE ATT&CK T1059.001 - PowerShell**.
 
 Some tests were blocked by Microsoft Defender during execution, so lab-only exclusions and short-term troubleshooting steps were needed to complete certain simulations safely inside the VM.
 
-## Planned Repository Additions
+## Detection Logic Examples
 
-- Screenshots for each successful test
-- Detection coverage table
-- Event Viewer proof examples
-- Resume-ready project summary
+- Flag **Security Event ID 4688** when `powershell.exe` launches suspicious child processes such as `nslookup.exe`
+- Flag PowerShell command lines containing **`-e`**, **`-enc`**, or other encoded command usage
+- Flag PowerShell activity containing **`iex`** or **`FromBase64String`**
+- Use **PowerShell Event ID 4104** to detect suspicious script block text such as `Invoke-Mimikatz` or `PowerView`
+
+## Current Status
+
+Version 1 of this lab is complete and published with evidence screenshots for **Test #6**, **Test #10**, and **Test #18**. Additional screenshots for **Test #11**, **Test #17**, and **Test #20** can be added later as optional improvements.
 
 ## Evidence Screenshots
 
